@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<h1> {{ movie.title }} </h1>
+
+<p>
+    Genre : 
+    {% for genre in movie.genres %}
+
+        {{ genre.name }} 
+
+        {% if not loop.last %}
+            ,
+        {% else %}
+            .    
+        {% endif %}
+
+    {% endfor %}
+</p>
+
+
+<p>
+    Acteurs : 
+
+    {% for c in movie.castings %}
+
+       Name : {{ c.person.name }} Role : <i> {{ c.role }} </i>  Credit : {{ c.orderCredit }}
+
+    {% endfor %}
+</p>
+
+
+{% endblock %}
