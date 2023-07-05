@@ -16,7 +16,7 @@ Après avoir cloné :
 Créer une _vraie_ entité avec des champs additionnels entre `Movie` et `Person`.  
 L'idée est de convertir la relation `ManyToMany` en une vraie entité (classe PHP) `ManyToOne/OneToMany`, comme décrit sur ce schéma ci-dessous :
 
-![](https://github.com/O-clock-Alumni/fiches-recap/blob/master/symfony/themes/img/conversion-m2m-m2o.svg)
+![](assets/docs/aide/symfony/themes/img/conversion-m2m-m2o.svg)
 
 - Nous appellerons cette liaison (entité) `Casting` et elle contiendra deux propriétés :
   - `role` : rôle de la personne dans le film.
@@ -40,6 +40,6 @@ Exemple MCD avec clef composite
 
 <details>
   
-  ![](https://github.com/O-clock-Alumni/fiches-recap/blob/master/symfony/themes/img/mcd-casting-m2m-m2o-concat-key.png)
+  ![](assets/docs/aide/symfony/themes/img/mcd-casting-m2m-m2o-concat-key.png)
   
 </details>
